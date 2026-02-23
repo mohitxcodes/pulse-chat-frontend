@@ -5,7 +5,7 @@ import { MessageSquare, Send, Users, Zap } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-background pt-16 md:pt-24 lg:pt-32 pb-16 min-h-[calc(100vh-3.5rem)] flex items-center">
+    <section className="relative overflow-hidden bg-background h-[calc(100vh-3.5rem)] flex items-center">
       {/* Background Gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,var(--tw-gradient-stops))] from-indigo-900/20 via-purple-900/10 to-background -z-10"></div>
       <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-primary/20 blur-3xl rounded-full opacity-50 -z-10"></div>
@@ -14,22 +14,22 @@ const HeroSection = () => {
       <div className="container px-4 md:px-8 mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
           {/* Left Content */}
-          <div className="flex flex-col justify-center space-y-8 max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
+          <div className="flex flex-col justify-center space-y-6 max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
             <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm text-primary w-fit mx-auto lg:mx-0">
               <Zap className="mr-2 h-4 w-4" />
-              <span>Introducing Pulse Chat 2.0</span>
+              <span>Introducing AI-Powered Pulse Chat 2.0</span>
             </div>
 
-            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl/none text-foreground">
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-5xl/none text-foreground leading-tight">
               Connect with your team <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-indigo-400">
-                at the speed of thought.
+                without language barriers.
               </span>
             </h1>
 
             <p className="max-w-[600px] text-lg text-muted-foreground sm:text-xl mx-auto lg:mx-0">
-              A modern, fast, and secure messaging platform for remote teams to
-              collaborate seamlessly. Experience chat like never before.
+              An AI-powered messaging platform featuring live voice translation.
+              Experience seamless remote collaboration across the globe.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -80,7 +80,7 @@ const HeroSection = () => {
             {/* Decorative elements behind mockup */}
             <div className="absolute -inset-1 bg-linear-to-r from-primary to-indigo-500 rounded-2xl blur opacity-25"></div>
 
-            <div className="relative rounded-2xl border border-border/50 bg-card/80 backdrop-blur-xl shadow-2xl overflow-hidden flex flex-col h-[500px]">
+            <div className="relative rounded-2xl border border-border/50 bg-card/80 backdrop-blur-xl shadow-2xl overflow-hidden flex flex-col h-[450px]">
               {/* Mockup Header */}
               <div className="flex items-center p-4 border-b border-border/50 bg-background/50">
                 <div className="flex space-x-2 mr-4">
@@ -107,7 +107,11 @@ const HeroSection = () => {
                   </div>
                   <div className="bg-secondary rounded-2xl rounded-tl-sm px-4 py-2 max-w-[80%] border border-border/50">
                     <p className="text-sm">
-                      Hey team! The new deployment is live. 🚀
+                      Hola equipo! La nueva versión está lista. 🚀
+                    </p>
+                    <p className="text-xs text-primary mt-1 border-t border-border/50 pt-1 flex items-center gap-1">
+                      <Zap className="h-3 w-3" /> Translated to: Hey team! The
+                      new version is ready. 🚀
                     </p>
                   </div>
                 </div>
@@ -119,8 +123,8 @@ const HeroSection = () => {
                   </div>
                   <div className="bg-secondary rounded-2xl rounded-tl-sm px-4 py-2 max-w-[80%] border border-border/50">
                     <p className="text-sm">
-                      Looks great! Getting amazing feedback from the beta users
-                      already.
+                      This AI live translation is incredible. We can finally
+                      collaborate seamlessly!
                     </p>
                   </div>
                 </div>
@@ -132,8 +136,8 @@ const HeroSection = () => {
                   </div>
                   <div className="bg-primary/20 rounded-2xl rounded-tr-sm px-4 py-2 max-w-[80%] border border-primary/30">
                     <p className="text-sm text-foreground">
-                      Awesome work everyone. Let's monitor the logs for the next
-                      hour.
+                      Exactly! Just press the voice button to try the new live
+                      voice translation feature.
                     </p>
                   </div>
                 </div>
